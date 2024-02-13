@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Express WebSocket Echo</title>
+</head>
+<body>
+  <script>
+    const ws = new WebSocket('ws://localhost:3000/websocket'); // Replace with your server address
+
+    ws.onopen = () => {
+      console.log('WebSocket connection opened');
+    };
+
+    ws.onmessage = (event) => {
+      console.log('Server message:', event.data);
+      // Update UI or display message as needed
+    };
+
+    ws.onerror = (error) => {
+      console.error('WebSocket error:', error);
+    };
+
+    function sendMessage() {
+      const message = document.getElementById('message').value;
+      ws.send(message);
+      document.getElementById('message').value = '';
+    }
+  </script>
+  <input type="text" id="message" placeholder="Type your message">
+  <button onclick="sendMessage()">Send</button>
+</body>
+</html>
