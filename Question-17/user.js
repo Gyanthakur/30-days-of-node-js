@@ -40,3 +40,7 @@ mongoose.connect('mongodb://localhost:27017/scaler', {
 
 
 addUserToDatabase({ username: 'john_doe', email: 'john@example.com' });
+addUserToDatabase({ username: 'Gyan Pratap', email: 'gyan@example.com' });
+addUserToDatabase({ username: 'Annu', email: 'annu@example.com' });
+addUserToDatabase({ username: 'Durgesh', email: 'durgesh@example.com' });
+addUserToDatabase({ username: 'Anurag', email: 'anurag@example.com' });
