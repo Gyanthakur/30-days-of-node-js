@@ -1,0 +1,32 @@
+[
+	{
+		"_id": {
+			"$oid": "65d73dae4fde789bea701cc8"
+		},
+		"name": "Widget",
+		"price": 10
+	},
+	{
+		"_id": {
+			"$oid": "65d73dde50cb57a8a99e32b5"
+		},
+		"name": "Widget",
+		"price": 10
+	},
+	{
+		"_id": {
+			"$oid": "65d73e34cf73ca8541490663"
+		},
+		"name": "Widget",
+		"price": 10
+	},
+	{
+		"_id": "63f4471822b8a541652651b1",
+		"name": "Product 1",
+		"price": 100,
+		"category": {
+			"_id": "63f4471822b8a541652651b0",
+			"name": "Category A"
+		}
+	}
+]
